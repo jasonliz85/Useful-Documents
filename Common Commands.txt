@@ -1,0 +1,65 @@
+--------------------------------------
+Django on Python				#help @ http://www.djangobook.com/en/2.0/
+======================================
+python-admin startproject <projectname> 	#creates a Django project
+./manage.py startapp <appname>			#creates a App for your Django project
+./manage.py validate				#validate model entries
+./manage.py sqlall <appname>			#view created models 
+./manage.py syncdb				#sycronise database and project models
+./manage.py shell				#shell command for Django
+./manage.py dbshell				#database's interactive shell
+./manage.py runserver				#start the inbuilt Django server
+--------------------------------------
+Ruby on Rails					#help @ http://www.railstutorial.org/book
+======================================
+rails <projectname> 				#create project
+script/server					#start the inbuilt Rails server
+rake:db migrate					#
+--------------------------------------
+Git						#help @ http://progit.org/book/ch2-2.html
+======================================
+git config --global user.name "name"		#set user name of Git project
+git config --global user.email <e-mail>		#set user's email
+git init					#initialises git project
+.gitignore					#file which is used to tell Git to ignore a specified list of files. (e.g. log/*.log tmp/* tmp/**/* doc/api doc/app db/*.sqlite3 *.swp *~ .DS_Store)
+git config --global core.editor gedit		#view individual global attributes
+git config --list				#view list of global attributes
+git help config					#Git help
+git add <filename>				#add a file to basket for checkout
+git status					#tells which files have changed between last checkout and current basket
+git diff					#tells the difference in files
+git diff --cached				#
+git commit -m 'comment'				#commit a change in the project
+git commit -a -m "comment"			#provides a shortcut for the case of committing all modifications to existing files (including file renames)
+git remote add origin git@github.com:<username>/<projectname>	#sets up remote connection to GitHub
+git push origin master				#pushes project to online repository
+git push					#pushes to github
+git checkout -b modify-<branchname>		# start a new branch in the project
+git branch					#view all branches
+git branch -d modify-<branchname>		#delete branch name after merging
+git branch -D modify-<branchname>		#delete branch without merging
+git mv <filename> <newfilename>			#rename files
+git checkout master				#switching to master branch
+git merge modify-<filename>			#merge branch with master
+--------------------------------------
+SSH keys					#help @ http://sshkeychain.sourceforge.net/mirrors/SSH-with-Keys-HOWTO/SSH-with-Keys-HOWTO-4.html
+======================================
+ssh-keygen -t rsa				#creates SSH key pair using RSA Algorithm (Rivest, Shamir, Andleman)
+ssh-keygen -t dsa				#creasts SSH key pair using DSA Algorithm (Digital Signal Algorithm)
+ssh <website>					#allows athentication with certain websites
+--------------------------------------
+Heroku						#help @ http://docs.heroku.com/stack
+======================================
+heroku keys:add					#add ssh keys to online repository 
+heroku stack 					#view all stacks on your app
+heroku stack:migrate <nameofstack>		#migrate to a new stack
+heroku create 					#create a new application 
+heroku create --stack <nameofstack>		#create a new application on a particular stack
+git push heroku master				#push changes from git to heroku
+heroku open					#opens your browser with the correct address
+
+
+
+
+
+
