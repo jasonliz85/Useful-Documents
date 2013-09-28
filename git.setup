@@ -1,0 +1,9 @@
+git config --global user.name "Jason Lizarraga"
+git config --global user.email jasonliz85@yahoo.com
+git config --global core.editor emacs
+git config --global core.editor vim
+git config --global merge.tool vimdif
+git config --global color.ui true
+git config --global color.diff.meta "blue black bold"
+git config branch.master.remote origin 
+git config branch.master.merge refs/heads/master

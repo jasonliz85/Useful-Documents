@@ -1,0 +1,9 @@
+python manage.py syncdb
+manage.py changepassword *username*
+manage.py createsuperuser --username=joe --email=joe@example.com
+
+python -c "
+import sys
+sys.path = sys.path[1:]
+import django
+print(django.__path__)"
